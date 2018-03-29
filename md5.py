@@ -18,7 +18,7 @@ def mounter():
     for file in range(1, len(sys.argv)):
         cur_dir = os.getcwd()
         cur_dir += '/'+str(sys.argv[file])
-        a = subprocess.call(['hdiutil',  'attach', cur_dir])
+        subprocess.call(['hdiutil',  'attach', cur_dir])
 
 
 def get_MD5():
